@@ -1,20 +1,8 @@
-item=input("item \n")
+your_item=input("what are you buying \n")
+item_price=float(input("how much does that item cost \n"))
+tax_rate=1.06875
 
-price=input("enter a price \n")
+def calculate_tax(item, price, rate):
+    print(item + " costs $"+ str(price) + " before tax and "+str(round(item_price*rate,2))+ " after tax.")
 
-price=float(price)
-
-rate=float(1.06875)
-
-final_price=(price*rate)
-
-answer=(final_price)
-
-answer_as_string=str(answer)
-
-price=str(price)
-
-print("-------------------------------------------------------------")
-
-print(item +" costs "+ price +" dollars before tax and " + answer_as_string + " after tax")
-
+calculate_tax(your_item, item_price, tax_rate)
