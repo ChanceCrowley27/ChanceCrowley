@@ -356,6 +356,8 @@ def table():
         print("Invalid Choice try again")
         table()
 
+screw_driver=False
+
 def door():
     print("As you approach the door you see a key card slot")
     print("1. Attempt to pick the lock with what ever you have in your pockets")
@@ -370,9 +372,9 @@ def door():
     elif choice =="3" and screw_driver == True:
         print("you use the screw driver and the door opens")
         ending_1()
-    elif choice == "4" and key_card == True:
-        print("you use the key card and the door opens quitely")
-        sneaky_escape()
+    elif choice =="3" and screw_driver == False:
+        print("wheres the screwdriver")
+        table()
     else:
         print("Invalid Choice try again")
         door() 
