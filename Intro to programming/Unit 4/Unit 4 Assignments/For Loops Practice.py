@@ -22,3 +22,13 @@ for letters in word:
         vowel_sum += 1
 
 print(vowel_sum)
+
+number=(input("what is one number you wish to use to find\n"))
+
+for i in range(1,11):
+    print(str(number) +" x "+str(i)+" = "+str(int(number)*i))
+
+name_list=["Alice","Macy","Hannah","Charles"]
+
+for name in name_list:
+    print("Hello, "+name+"!")
