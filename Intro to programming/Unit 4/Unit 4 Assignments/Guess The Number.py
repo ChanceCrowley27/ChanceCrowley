@@ -1,6 +1,6 @@
 import random
 
-number_generator=random.randint(1,101)
+number_generator=random.randint(1,100)
 guess=False
 num_guesses=0
 while guess==False:
@@ -24,6 +24,27 @@ while guess==False:
     
     else:
         guess= False
+
+if num_guesses == 1:
+    print("Unreal")
+elif num_guesses <=3:
+    print("CHAMPION")
+elif num_guesses <=5:
+    print ("Elite")
+elif num_guesses <=7:
+    print("Diamond")
+elif num_guesses <=9:
+    print("Platinum")
+elif num_guesses <=12:
+    print("Gold")
+elif num_guesses<=13:
+    print("Silver")
+elif num_guesses<=15:
+    print("Bronze")
+elif num_guesses <=25:
+    print("Wood")
+else:
+    print("Failure")
     
 
 
